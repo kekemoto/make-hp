@@ -44,10 +44,13 @@
 				background-color: #EEEEEE;
 				margin-top: 2em;
 				padding: 1em;
-				display:-moz-box;
-				display:-webkit-box;
-				display:-o-box;
-				display:-ms-box;
+			}
+
+			table{
+				width: 100%;
+			}
+			td{
+				width: 50%;
 			}
 
 			.board{
@@ -79,10 +82,6 @@
 			.img{
 				width: 8%;
 				cursor: pointer;
-			}
-
-			.box{
-				width: 50%;
 			}
 
 			#setting{
@@ -373,12 +372,14 @@
 			</section>
 
 			<footer>
-				<div class="box">
-					<p><a href="about.html">About?</a></p>
-				</div>
-				<div class="box">
-					<p><a href="http://www.asahi-net.or.jp/~yb7m-tkmt/index.html" target="_new"><abbr title="管理人のHP">HP of administrator</abbr></a></p>
-				</div>
+				<table>
+					<tr>
+						<td><p><a href="about.html">About</a></p></td>
+						<td><p><a href="http://www.asahi-net.or.jp/~yb7m-tkmt/index.html" target="_new"><abbr title="管理人のHP">HP of administrator</abbr></a></p></td>
+					</tr>
+					<tr>
+						<td><p><a href="https://github.com/kekemoto/make-hp" target="_new">Github</a></p></td>
+					</tr>
 			</footer>
 		</div>
 	</body>
