@@ -280,10 +280,11 @@
 
 			//設定を読み込む
 			function readCSS () {
-				ajax("css","http://www.asahi-net.or.jp/~yb7m-tkmt/MakeHP/MadeCSS.css");
-				ajax("javascript","http://www.asahi-net.or.jp/~yb7m-tkmt/MakeHP/MadeJS.js");
-				ajax("head","http://www.asahi-net.or.jp/~yb7m-tkmt/MakeHP/MadeHead.txt");
-				ajax("base","http://www.asahi-net.or.jp/~yb7m-tkmt/MakeHP/MadeBase.txt");
+				var root = "http://kekemoto.github.io/make-hp"
+				ajax("css", root + "/made-css.css");
+				ajax("javascript", root + "/made-js.js");
+				ajax("head", root + "/made-head.txt");
+				ajax("base", root + "/made-base.txt");
 			}
 
 			//Ajaxで外部ファイルを読み込む
